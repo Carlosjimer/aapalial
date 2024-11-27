@@ -7,6 +7,9 @@
     --cielo: rgba(155,196,170,1);
     --cielob: rgba(155,196,170,.95);
 }
+body{
+    background: red;
+}
 
 ul{
     margin: 0;
