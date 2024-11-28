@@ -30,10 +30,10 @@ a{
     text-wrap: wrap;
     max-width: 95%vw;
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 2em;
     border: solid 3px var(--azul);
     border-radius: 1em;
-    padding: 1em;
+    padding: .6em;
     background: var(--naranjab);
 }
 #in{
