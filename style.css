@@ -25,6 +25,7 @@ a{
     text-decoration: none;
 }
 #p-home{
+    margin: 0;
     display: flex;
     justify-content: center;
     text-wrap: wrap;
@@ -35,8 +36,13 @@ a{
     border-radius: 1em;
     padding: .6em;
     background: var(--naranjab);
+    text-align: center;
 }
-#in{
+h2{
+    text-align: center;
+    margin: 0;
+}
+#in, #in-con, #in-tras{
     display: flex;
     justify-content: space-around;
     margin: 1em;
@@ -58,10 +64,10 @@ a{
         background: var(--cielo);
     }
 }
-#lista{
+#lista, #lista-con, #lista-tras{
     padding: 0 1em;
 }
-#lista > div {
+#lista > div, #lista-con > div, #lista-tras > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,13 +77,13 @@ a{
     margin: .5em 0;
 }
 
-#lista > div > p{
+#lista > div > p, #lista-con > div > p, #lista-tras > div > p{
     font-size: 1.2em;
     font-weight: bolder;
     margin-left: .7em;
 }
 
-#lista > div > button{
+#lista > div > button, #lista-con > div > button, #lista-tras > div > button{
         padding: .8em;
         font-weight: bolder;
         border: 3px solid var(--rojo);
