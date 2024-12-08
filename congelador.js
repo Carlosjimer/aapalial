@@ -50,7 +50,7 @@ añadir.addEventListener('click', function() {
     let objeto = elemento.value;
     let completo = { objeto, cantidad: 1 };
     let elementosCongelados = JSON.parse(localStorage.getItem('listaCongelados')) || []; 
-    elementosCongelados.push(completo);
+    elementosCongelados.unshift(completo);
     localStorage.setItem('listaCongelados', JSON.stringify(elementosCongelados));
     agregarElemento(objeto, 1);
     elemento.value = ''; 
@@ -91,7 +91,7 @@ function agregarElemento(objeto, cantidad) {
         }
     });
 
-    lista.appendChild(contenedor); 
+    lista.insertBefore(contenedor, lista.firstChild); 
 }
 
 function actualizarLocalStorage(objeto, cantidad) {

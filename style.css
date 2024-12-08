@@ -78,10 +78,17 @@ h2{
     margin: .5em 0;
 }
 
-#lista > div > p, #lista-con > div > p, #lista-tras > div > p{
+#lista > div > p{
     font-size: 1.2em;
     font-weight: bolder;
     margin-left: .7em;
+    max-width: 70%;
+}
+#lista-con > div > p, #lista-tras > div > p{
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-left: .7em;
+    max-width: 60%;
 }
 
 #lista > div > button, #lista-con > div > button, #lista-tras > div > button{
@@ -95,12 +102,12 @@ h2{
 }
 #botonera{
     margin-right:.5em;
-    width: 30%;
+    width: 35%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     #sum, #res{
-        padding: .8em;
+        padding: .8em 1em;
         font-size: 1.1em;
         font-weight: bolder;
         border: 3px solid var(--rojo);

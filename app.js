@@ -13,7 +13,7 @@ añadir.addEventListener('click', function() {
     let objeto = elemento.value;
     let completo = { objeto, id };
     let elementosGuardados = JSON.parse(localStorage.getItem('listaElementos')) || []; 
-    elementosGuardados.push(completo);
+    elementosGuardados.unshift(completo);
     localStorage.setItem('listaElementos', JSON.stringify(elementosGuardados));
     agregarElemento(objeto, id); elemento.value = ''; 
 });
@@ -33,5 +33,5 @@ function agregarElemento(objeto, id) {
         });
         localStorage.setItem('listaElementos', JSON.stringify(elementosGuardados));
     });
-    lista.appendChild(contenedor); 
+    lista.insertBefore(contenedor, lista.firstChild); 
 }

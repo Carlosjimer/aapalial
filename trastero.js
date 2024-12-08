@@ -13,7 +13,7 @@ añadir.addEventListener('click', function() {
     let objeto = elemento.value;
     let completo = { objeto, cantidad: 1 };
     let elementosTrastero = JSON.parse(localStorage.getItem('listaTrastero')) || []; 
-    elementosTrastero.push(completo);
+    elementosTrastero.unshift(completo);
     localStorage.setItem('listaTrastero', JSON.stringify(elementosTrastero));
     agregarElemento(objeto, 1);
     elemento.value = ''; 
@@ -54,7 +54,7 @@ function agregarElemento(objeto, cantidad) {
         }
     });
 
-    lista.appendChild(contenedor); 
+    lista.insertBefore(contenedor, lista.firstChild); 
 }
 
 function actualizarLocalStorage(objeto, cantidad) {
