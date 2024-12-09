@@ -25,7 +25,7 @@ function agregarElemento(objeto, id) {
     contenedor.appendChild(parrafo);
     boton.textContent = 'Borrar';
     boton.id = id; contenedor.appendChild(boton);
-    boton.addEventListener('click', function() { 
+    boton.addEventListener('click', function() {
         lista.removeChild(contenedor);
         let elementosGuardados = JSON.parse(localStorage.getItem('listaElementos')) || [];
         elementosGuardados = elementosGuardados.filter(function(completo) { 
